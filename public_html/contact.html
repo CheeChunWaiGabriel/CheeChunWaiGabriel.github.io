@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="newCascadeStyleSheet.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="background-video">
+        <source src="videos/video (1080p).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+     <img src="images/Screenshot 2023-11-17 143506.png" alt="Fallback Image" id="background-video-image"/>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="Asset 1.svg">
+        </div>
+        <h1>Contact Us</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="packagetours.html" class="dropbtn">Package Tours</a>
+                <div class="dropdown-content">
+                    <a href="#">Amazing America</a>
+                    <a href="#">Brilliant Britain</a>
+                    <a href="#">Canada Countryside Adventures</a>
+                </div>
+            </li>
+            <li><a href="#">Rediscover Singapore</a></li>
+            <li><a href="#">Cruises</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Have questions or want to get in touch? Reach out to us using the information below:</p>
+
+            <address>
+                <strong>WordXplore Headquarters</strong><br>
+                123 Orchard Road<br>
+                Singapore
+            </address>
+
+            <p>Email: <a href="mailto:info@wordxplore.com">info@wordxplore.com</a></p>
+            <p>Phone: 9765-6585</p>
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <form class="form-horizontal" method="post" action="docontact.php">
+                <div class="form-group">
+                        <div class="col-sm-12">
+                            <!-- name  -->
+                            <input type="text" class="form-control"
+                                   id="name" placeholder="NAME"
+                                   name="name" value="" />
+                        </div>
+                    </div>
+ 
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <!-- email  -->
+                            <input type="email" class="form-control"
+                                   id="email" placeholder="EMAIL"
+                                   name="email"
+                                value="" />
+                        </div>
+                    </div>
+ 
+                    <!-- message  -->
+                    <textarea class="form-control" rows="10"
+                              placeholder="MESSAGE" name="message">
+            </textarea>
+ 
+                    <button class="btn btn-primary send-button"
+                            id="submit" type="submit" value="SEND">
+                        <i class="fa fa-paper-plane"></i>
+                        <span class="send-text">SEND</span>
+                    </button>
+                </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 WordXplore</p>
+        <p>Disclaimer: This a mock-up website that isn't functional. No transactions please.</p>
+    </footer>
+</body>
+
+</html>
